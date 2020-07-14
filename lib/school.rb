@@ -1,4 +1,5 @@
 # code here!
+require "pry"
 class School
   attr_accessor :roster
   def initialize(name)
@@ -17,5 +18,6 @@ class School
     @roster.each do |grades, students|
       sorted_list[grades] = students.sort
     end
+    binding.pry 
   end 
 end 
